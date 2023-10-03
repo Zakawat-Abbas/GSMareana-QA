@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Q&A System</title>
+    <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css"> -->
+</head>
+
+<body>
+    <div class="web-container">
+        <nav class="navbar navbar-expand-md sticky-top navbar-light bg-light">
+            <div class="container-fluid">
+                <div class="web-logo">
+                    <a class="navbar-brand">
+                        <img src="./images/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="mx-auto">
+                    <h3>QA System for Mobile Specification Inquiries</h3>
+                </div>
+            </div>
+        </nav>
+        <div class="web-search-section" id="searchSection">
+            <img src="./images/msg-icon.png" alt="no image found" width="160px" class="msg-icon-img d-md-block d-none">
+            <div class="row text-center question">
+                <p class="mb-1">HAVE A QUESTION?</p>
+                <p>If you have any question you can ask below or enter what you are looking for!
+                </p>
+            </div>
+            <div class="row justify-content-center">
+                <form class="col-md-5 col-12 query message-box" id="mymsg" method="POST">
+                    <input type="text" id="MSG" name="MSG" class="message-input form-control"
+                        placeholder="Enter your query here!">
+                    <div class="row justify-content-center mt-3">
+                        <div class="col-md-3 col-12 d-grid text-center">
+                            <button type="submit"
+                                class="message-submit btn btn-primary rounded-pill w-100 ">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="answer-section " id="answerSection">
+            <div class="ques">
+                <h4>Question you are looking for:</h4>
+                <p class="Question"></p>
+                <h4>Extracted Response:</h4>
+                <div class="messages-content">
+                    <p class="Response"></p>
+                </div>
+                <div class="col-md-2 col-12 d-grid text-center">
+                    <button class="btn btn-primary rounded-pill w-100 again" id='search'>Search
+                        Again</button>
+                </div>
+            </div>
+        </div>
+        <div class="row-md-7 row-12">
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <tr class="Hide Heading">
+                        <th></th>
+                        <th></th>
+                        <th class="table-dark-bg Heading1">Samsung Galaxy A32 5g</th>
+                        <th class="table-dark-bg Hide Heading2">Samsung Galaxy A12</th>
+                    </tr>
+                    <tr class="Hide RD_Status">
+                        <th class="text-red">Release Date(Status)</th>
+                        <th>Year & Availablity</th>
+                        <td class="RD_Status1">Available. Released 2021, January 22</td>
+                        <td class="Hide RD_Status2">Available. Released 2020, December 21</td>
+                    </tr>
+                    <tr class="Hide Weight">
+                        <th class="text-red">Weight</th>
+                        <th>Gram</th>
+                        <td class="Weight1">205g, 9.1mm thickness</td>
+                        <td class="Hide Weight2">205g, 8.9mm thickness</td>
+                    </tr>
+                    <tr class="Hide OS">
+                        <th class="text-red">Operating System</th>
+                        <th>OS</th>
+                        <td class="OS1">Android 11, up to Android 12, One UI 4.1</td>
+                        <td class="Hide OS2">Android 10, up to Android 11, One UI 3.1</td>
+                    </tr>
+                    <tr class="Hide MemorySlot">
+                        <th rowspan="2" class="text-red">Storage</th>
+                        <th>Card Slot</th>
+                        <td class="MemorySlot1">microSDXC (uses shared sim slot)</td>
+                        <td class="Hide MemorySlot2">microSDXC (dedicated sim slot)</td>
+                    </tr>
+                    <tr class="Hide InternalMemory">
+                        <th>Internal</th>
+                        <td class="InternalMemory1">64GB 4GB RAM, 128GB 4GB Ram,128GB 6GB RAM, 128GB 8GB Ram</td>
+                        <td class="Hide InternalMemory2">32GB 2GB RAM, 32GB 3GB Ram,64GB 4GB RAM, 128GB 3GB Ram,128GB
+                            6GB RAM,
+                            128GB 8GB
+                            Ram</td>
+                    </tr>
+                    <tr class="Hide Fans">
+                        <th class="text-red">Fans</th>
+                        <th>Person</th>
+                        <td class="Fans1">173</td>
+                        <td class="Hide Fans2">278</td>
+                    </tr>
+                    <tr class="Hide Popularity">
+                        <th class="text-red">Popularity</th>
+                        <th>Percentage</th>
+                        <td class="Popularity1">15%</td>
+                        <td class="Hide Popularity2">32%</td>
+                    </tr>
+                    <tr class="Hide Hits">
+                        <th class="text-red">Hits</th>
+                        <th>Hits</th>
+                        <td class="Hits1">3,628,675 hits</td>
+                        <td class="Hide Hits2">8,437,501 hits</td>
+                    </tr>
+                    <tr class="Hide ScreenSize">
+                        <th class="text-red">Screen Size</th>
+                        <th>Inch</th>
+                        <td class="ScreenSize1">6.5</td>
+                        <td class="Hide ScreenSize2">6.5</td>
+                    </tr>
+                    <tr class="Hide ScreenResolution">
+                        <th class="text-red">Screen Resolution</th>
+                        <th>Pixels</th>
+                        <td class="ScreenResolution1">720x1600 pixels</td>
+                        <td class="Hide ScreenResolution2">720x1600 pixels</td>
+                    </tr>
+                    <tr class="Hide RAM">
+                        <th class="text-red">RAM</th>
+                        <th>GB</th>
+                        <td class="RAM1">4-8 GB RAM</td>
+                        <td class="Hide RAM2">2-6 GB RAM</td>
+                    </tr>
+                    <tr class="Hide Processor">
+                        <th class="text-red">Processor</th>
+                        <th>SOC</th>
+                        <td class="Processor1">Dimensity 720</td>
+                        <td class="Hide Processor2">Helio P35</td>
+                    </tr>
+                    <tr class="Hide Battery">
+                        <th class="text-red">Battery</th>
+                        <th>mAh</th>
+                        <td class="Battery1">Li-Ion 5000 mAh, non-removable</td>
+                        <td class="Hide Battery2">Li-Po 5000 mAh, non-removable</td>
+                    </tr>
+                    <tr class="Hide Dimensions">
+                        <th class="text-red">Dimensions</th>
+                        <th>Dimensions</th>
+                        <td class="Dimensions1">164.2 x 76.1 x 9.1 mm (6.46 x 3.00 x 0.36 in)</td>
+                        <td class="Hide Dimensions2">164 x 75.8 x 8.9 mm (6.46 x 2.98 x 0.35 in)</td>
+                    </tr>
+                    <tr class="Hide Sim">
+                        <th class="text-red">Sim</th>
+                        <th>Sim</th>
+                        <td class="Sim1">Single SIM (Nano-SIM) or Hybrid Dual SIM (Nano-SIM, dual stand-by)</td>
+                        <td class="Hide Sim2">Single SIM (Nano-SIM) or Dual SIM (Nano-SIM, dual stand-by)</td>
+                    </tr>
+                    <tr class="Hide DisplayType">
+                        <th class="text-red">Display Type</th>
+                        <th>Display Specs</th>
+                        <td class="DisplayType1">TFT LCD, 60Hz (International), 90Hz (SM-A326U only)</td>
+                        <td class="Hide DisplayType2">PLS LCD</td>
+                    </tr>
+                    <tr class="Hide DisplayProtection">
+                        <th class="text-red">Display Protection</th>
+                        <th>Screen Protection</th>
+                        <td class="DisplayProtection1">Corning Gorilla Glass 5</td>
+                        <td class="Hide DisplayProtection2">Information Not Available</td>
+                    </tr>
+                    <tr class="Hide Build">
+                        <th class="text-red">Build</th>
+                        <th>Build</th>
+                        <td class="Build1">Glass front (Gorilla Glass 5), plastic frame, plastic back</td>
+                        <td class="Hide Build2">Glass front, plastic back, plastic frame</td>
+                    </tr>
+                    <tr class="Hide Camera2modules">
+                        <th rowspan="2" class="text-red">Front Camera</th>
+                        <th>Module</th>
+                        <td class="Camera2modules1">13MP,f/2 2, (wide)</td>
+                        <td class="Hide Camera2modules2">8MP,f/2 2, (wide)</td>
+                    </tr>
+                    <tr class="Hide Camera2video">
+                        <th>Video</th>
+                        <td class="Camera2video1">1080p@30fps</td>
+                        <td class="Hide Camera2video2">1080p@30fps</td>
+                    </tr>
+                    <tr class="Hide Camera1modules">
+                        <th rowspan="2" class="text-red">Back Camera</th>
+                        <th>Module</th>
+                        <td class="Camera1modules1">Wide(main):48MP,f/1.8,26mm,1/20",0.8µm,PDAF; Ultra wide
+                            angle:8MP,f2/2,123-degree,1/4.0",1.12µm, Macro:5MP, f/2.4;Depth:2MP,f/2.4</td>
+                        <td class="Hide Camera1modules2">Wide(main):48MP,f/1.8,26mm, AP;Ultra wide angle 5MP,
+                            f/2.2,123';Macro:2MP.f/2.4;Depth:2MP,f/2.4
+                        </td>
+                    </tr>
+                    <tr class="Hide Camera1video">
+                        <th>Video</th>
+                        <td class="Camera1video1">4K@30fps, 1080p@30/120fps</td>
+                        <td class="Hide Camera1video2">1080p@30fps</td>
+                    </tr>
+                    <tr class="Hide Network">
+                        <th class="text-red">Network</th>
+                        <th>Wifi & Data</th>
+                        <td class="Network1">Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct, hotspot</td>
+                        <td class="Hide Network2">Wi-Fi 802.11 b/g/n, Wi-Fi Direct, hotspot</td>
+                    </tr>
+                    <tr class="Hide Bluetooth">
+                        <th class="text-red">Bluetooth</th>
+                        <th>Bluetooth</th>
+                        <td class="Bluetooth1">5.0, A2DP, LE</td>
+                        <td class="Hide Bluetooth2">5.0, A2DP, LE</td>
+                    </tr>
+                    <tr class="Hide GPS">
+                        <th class="text-red">GPS</th>
+                        <th>GPS</th>
+                        <td class="GPS1">Yes, with A-GPS, GLONASS, GALILEO, BDS</td>
+                        <td class="Hide GPS2">Yes, with A-GPS, GLONASS, GALILEO, BDS</td>
+                    </tr>
+                    <tr class="Hide NFC">
+                        <th class="text-red">NFC</th>
+                        <th>NFC</th>
+                        <td class="NFC1">Yes (market/region dependent)</td>
+                        <td class="Hide NFC2">Yes (market/region dependent)</td>
+                    </tr>
+                    <tr class="Hide Radio">
+                        <th class="text-red">Radio</th>
+                        <th>Radio</th>
+                        <td class="Radio1">FM radio</td>
+                        <td class="Hide Radio2">FM radio, RDS, recording</td>
+                    </tr>
+                    <tr class="Hide USB">
+                        <th class="text-red">USB</th>
+                        <th>USB</th>
+                        <td class="USB1">USB Type-C 2.0, USB On-The-Go</td>
+                        <td class="Hide USB2">USB Type-C 2.0</td>
+                    </tr>
+                    <tr class="Hide Sensors">
+                        <th class="text-red">Sensors</th>
+                        <th>Sensors</th>
+                        <td class="Sensors1">Fingerprint (side-mounted), accelerometer, gyro, compass</td>
+                        <td class="Hide Sensors2">Fingerprint (side-mounted), accelerometer</td>
+                    </tr>
+                    <tr class="Hide Colors">
+                        <th class="text-red">Colors</th>
+                        <th>Colors</th>
+                        <td class="Colors1">Awesome Black, Awesome White, Awesome Blue, Awesome Violet</td>
+                        <td class="Hide Colors2">Black, White, Blue, Red</td>
+                    </tr>
+                    <tr class="Hide GPU">
+                        <th class="text-red">GPU</th>
+                        <th>GPU</th>
+                        <td class="GPU1">Mali-G57 MC3</td>
+                        <td class="Hide GPU2">PowerVR GE8320</td>
+                    </tr>
+                    <tr class="Hide Price">
+                        <th class="text-red">Price</th>
+                        <th>Rupee</th>
+                        <td class="Price1">Rs. 45,434.58</td>
+                        <td class="Hide Price2">Rs. 31,172.76</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script
+            src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js'></script>
+        <script src="js/index.js"></script>
+        <script>
+            $(".again").click(function () {
+                $(window).scrollTop(0);
+                location.reload();
+
+            });
+            $(".message-submit").click(function () {
+                $('html, body').animate({
+                    scrollTop: $(".message-submit").offset().top
+                });
+            });
+        </script>
+</body>
+
+</html>

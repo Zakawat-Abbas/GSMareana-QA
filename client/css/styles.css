@@ -1,0 +1,65 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: roboto;
+}
+
+.Hide {
+  display: none;
+}
+
+nav img {
+  width: 70px;
+}
+
+.link-button {
+  color: white;
+  text-decoration: none;
+}
+
+.link-button:hover {
+  color: white;
+}
+
+.web-search-section {
+  padding: 50px 10px;
+  background-color: #1b2347;
+  color: white;
+  position: relative;
+}
+
+.msg-icon-img {
+  position: absolute;
+  right: 15%;
+}
+
+.answer-section {
+  padding: 10px 20px;
+}
+
+table td,
+th {
+  vertical-align: middle;
+}
+
+/* Theming*/
+
+.table-dark-bg {
+  background-color: #5372ab !important;
+  color: white;
+}
+
+.text-red {
+  color: rgb(212, 27, 27);
+}
+th {
+  table-layout: fixed;
+  width: 10%;
+}
+td {
+  table-layout: fixed;
+  width: 30%;
+}
